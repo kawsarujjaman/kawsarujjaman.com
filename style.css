@@ -1,0 +1,482 @@
+/*
+Color code 
+#264653 
+197, 54, 33
+197, 37, 24
+38, 70, 83
+28, -8, -11
+Charcoal
+5020
+HKS 93 K
+Cool Grey 90% PC 1067 
+#264653  #2a9d8f #e9c46a #f4a261 #ff5722
+*/
+/* 
+font-family: 'Karla', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Karla&family=Montserrat:wght@300;400&family=Roboto:wght@300;400&family=Titillium+Web:wght@300;400&display=swap');
+
+ *{
+     margin: 0;
+     padding: 0;
+ }
+ body{
+     background-color: #f5f5f5;
+     font-family: 'Roboto', sans-serif;
+ }
+ h1, h2, h3, h4, h5, h6{
+     font-family: 'Titillium Web', sans-serif;
+ }
+ 
+ header{
+     background-image: linear-gradient(#0000006b , #000000),
+     linear-gradient(#0000009e , #07000070), url(images/bg.jpg);
+    
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+ 
+ }
+ header .navbar{
+     position: sticky
+ }
+ header .navbar, .dropdown-menu.dropdown-content {
+     background-color: rgba(13 162 191 / 26%);
+ }
+ .nav-item{
+    
+     font-weight: 500;
+     padding: 0 10px;
+ }
+
+ .nav-item a {
+    color: white;
+    transition: all 0.3 ease-in-out;
+    -webkit-transition: all 0.3 ease-in-out;
+    -moz-transition: all 0.3 ease-in-out;
+    -ms-transition: all 0.3 ease-in-out;
+    -o-transition: all 0.3 ease-in-out;
+}
+.nav-item a:hover{
+    color: #2a9d8f;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+ .header-social-icon i{
+     font-size: 20px;
+     border: 1px solid #fff;
+     border-radius: 30%;
+     padding: 4px 7px;
+     color: #fff;
+     transition: all .3 ease-in-out;
+     -webkit-transition: all .3 ease-in-out;
+     -moz-transition: all .3 ease-in-out;
+     -ms-transition: all .3 ease-in-out;
+     -o-transition: all .3 ease-in-out;
+ }
+ .header-social-icon i:hover{
+     background-color:#d8e2dc;
+     color: #2a9d8f;
+     border-color: rgb(92, 92, 92);
+     transform: scale(1.1);
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -ms-transform: scale(1.1);
+     -o-transform: scale(1.1);
+ }
+ .header-title .navbar-brand{
+     color: white !important;
+ }
+ .header-social-icon h1{
+     font-size: 24px;
+     margin: 0;
+     font-weight: 700;
+     
+ }
+ .header-social-icon h1::first-letter{
+     color: #ff5722;
+     font-weight: bolder;
+ }
+ .header-social-icon p{
+     font-size: 14px;
+     padding: 0;
+     margin: 0;
+ }
+ 
+ .dropdown-content{
+     display: none;
+ 
+ }
+ .dropdown:hover .dropdown-content{
+     display: block;
+     
+ }
+ 
+ /* Banner starts */
+ .banner-container{
+    height: 100vh;
+     color: white;
+ }
+ .banner-content .btn {
+    margin-right: 12px;
+    padding: 9px 18px;
+    font-size: 19px;
+    border:none;
+    background: linear-gradient(to left, #539694, #054039);
+    transition: all 0.3s cubic-bezier(0.7, -0.02, 0.48, 1);
+}
+
+.banner-content .btn:hover {
+    color: #ff5722;
+}
+ 
+ /* Service section starts here */
+
+ section.service {
+    background: #f9fdfd;
+}
+.section-title {
+    padding-bottom: 30px;
+}
+ .section-title h2 {
+     color: #2a9d8f;
+ }
+ 
+ .section-title h2 span {
+     color: #ff5722;
+ }
+ 
+ .section-title h2 {
+     font-weight: 700;
+     letter-spacing: 3px;
+     font-size: 36px;
+ }
+ .section-title p::before {
+     content: "";
+     background: #dedede;
+     border: 1px solid #dedede;
+     width: 250px;
+     position: relative;
+     left: 38%;
+     top: 31px;
+     display: block;
+ }
+ .section-title p::after {
+     content: "";
+     background: #2a9d8f;
+     border: 3px solid #2a9d8f;
+     width: 50px;
+     position: relative;
+     left: 48%;
+     top: 3px;
+     display: block;
+ }
+ 
+ .service-content {
+     border: 1px solid #dedede;
+     padding: 20px;
+     background: #fff;
+     margin-right: 30px;
+     transition: all 0.3s ease-in ;
+     -webkit-transition: all 0.3s ease-in ;
+     -moz-transition: all 0.3s ease-in ;
+     -ms-transition: all 0.3s ease-in ;
+     -o-transition: all 0.3s ease-in ;
+}
+ .service-content:last-child{
+     margin-right: 0px;
+ }
+
+ .tutorials .card:hover, .service-content:hover{
+     transform: translateY(-20px);
+     -webkit-transform: translateY(-20px);
+     -moz-transform: translateY(-20px);
+     -ms-transform: translateY(-20px);
+     -o-transform: translateY(-20px);
+     box-shadow: 2px 6px 5px black;
+}
+ .service-content i {
+     background: #ff5722;
+     color: white;
+     padding: 25px;
+     margin-bottom: 12px;
+     position: relative;
+     top: -27%;
+     border-radius: 4px;
+     transition: all 0.3s ease-in-out;
+     -webkit-transition: all 0.3s ease-in-out;
+     -moz-transition: all 0.3s ease-in-out;
+     -ms-transition: all 0.3s ease-in-out;
+     -o-transition: all 0.3s ease-in-out;
+}
+.service-content i:hover{
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    background: #2a9d8f ;
+    color: #ff5722;
+}
+ .service-text h3{
+     color:#2a9d8f ;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 600;
+ }
+ .service-text p {
+    font-size: 15px;
+    color: #888;
+}
+ /* Service section ends here */
+ 
+ /* About section starts here */
+
+ section.about {
+    background: linear-gradient(     45deg   , #a3d2ca, transparent);;
+    padding: 50px 0;
+}
+.about-content .icon-style{
+    background: #2a9d8f;
+    padding: 15px;
+    color: white;
+}
+
+.about-content h6 {
+    text-decoration: underline;
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.about-content h3 {
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.about-content a {
+    color: #888;
+}
+
+.education-content p {
+    color: #666;
+}
+.skill-content tr td {
+    padding: 0 7px;
+}
+
+/* Tutorial Section starts here */
+.tutorials{
+    background-color: #a3d2ca;
+    color: white;
+    padding: 50px 0;
+}
+.tutorials .card{
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+}
+.card h3 {
+    color: #333;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.card-body img {
+    height: 150px;
+}
+/* Tutorial Section ends here */
+
+/* FeedBack Section Starts here */
+.feedback{
+    background-color: #72bbb9;
+    padding: 50px 0;
+}
+.feedback h2{
+    color: white;
+}
+.carousel-item img{
+    width: 120px;
+}
+ol.carousel-indicators {
+    margin: -25px;
+}
+.carousel-item {
+    color: white;
+}
+.carousel-item h6 {
+    font-size: 18px;
+    margin-top: 10px;
+    
+}
+
+.carousel-item p {
+    padding: 0 70px;
+}
+/* FeedBack Section ends here */
+
+/* Contact Section starts here */
+.contact{
+    background-color: #72bbb9;
+    padding: 50px 0;
+}
+section.contact h2 {
+    color: white;
+}
+section.contact .btn {
+    background: linear-gradient(to left, #62adaa, #157368);
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-right: 10px;
+    padding: 7px 25px;
+    text-align: center;
+    border: none;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+section.contact .btn:hover{
+    color: #ff5722;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+}
+/* Footer starts here */
+footer{
+    background: linear-gradient(to left, #539694, #054039);
+    color: white;
+}
+footer h3 {
+    color: #f5f5f5;
+    font-family: 'Roboto';
+    font-weight: 500;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.footer-text {
+    margin-left: 20px;
+}
+
+.footer-text h3::first-letter {
+    color: #ff5722;
+}
+.footer-icon i {
+    color: #2a9d8f;
+    border: 1px solid #bbbbbb;
+    padding: 10px;
+    border-radius: 50%;
+    margin-right: 4px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.footer-icon i:hover{
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    color: #dddddd;
+    background-color: #2a9d8f;
+}
+
+.footer-link a {
+    color: #bbbbbb;
+    padding: 5px 0;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+.footer-link a:hover {
+    color: #ff5722;
+    padding: 5px 0;
+    text-decoration: none;
+    background: linear-gradient(to left, #539694, #054039);
+}
+
+.footer-text p, .footer-contact p {
+    color: #bbbbbb;
+}
+.footer-contact i {
+    background: linear-gradient(to left, #539694, #054039);
+    padding: 8px 15px;
+}
+.newsletter .btn {
+    background: linear-gradient(to left, #539694, #054039);
+    color: #bbbbbb;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 6px;
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.newsletter .btn:hover{
+    color:#ff5722;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+}
+
+.footer-copyright p {
+    margin-left: 20px;
+    color: #bbbbbb;
+}
+
+.footer-copyright a {
+    color: #2fd4c0;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+.feedback-container h3 {
+    padding-bottom: 30px;
+}
+/* Contact Section ends here */
+
+ /* #2a9d8f 
+ #ff5722*/
+ 
+ @media only screen and (max-width: 423px) {
+  body {
+    max-width: 423px;
+  }
+   .section-title p::before {
+    content: "";
+    width: 120px;
+   
+}
+  
+}
+ @media only screen and (max-width: 320px) {
+	.banner-content .btn {
+		margin-bottom: 20px;
+}
+}
+ 
